@@ -21,7 +21,7 @@ a {
   color: darkblue; }
 
 a:hover {
-  color: #2ae149;
+  color: darkblue;
   text-decoration: none; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -956,7 +956,7 @@ section {
   border-radius: 4px; }
 
 .contact .php-email-form button[type="submit"]:hover {
-  background: #2ae149; }
+  background: darkblue; }
 
 @-webkit-keyframes animate-loading {
   0% {
