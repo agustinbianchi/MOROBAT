@@ -270,6 +270,22 @@ h1, h2, h3, h4, h5, h6 {
 .mobile-nav-active .mobile-nav-toggle i {
   color: #fff; }
 
+.cartImg {
+  width: 45px; 
+  cursor: pointer;
+}
+
+#cartNumbers {
+  background-color: darkblue;
+  width: 23px;
+  height: 23px;
+  border-radius: 10%;
+  text-align: center;
+  position: relative;
+  top: -11px;
+  right: 6px;
+  cursor: pointer;
+}
 /*--------------------------------------------------------------
 # Header Social Links
 --------------------------------------------------------------*/
@@ -606,6 +622,28 @@ section {
 .productos__imagenes--tamanio {
   width: 500px;
   height: 300px; }
+
+.card {
+  text-align: center;
+  border: solid grey 2px;
+  padding: 10px;
+}
+.card h2 h3{
+  color: #111;}
+
+.spanPrecio {
+  background-color: yellow;
+}
+
+.btn-carrito {
+  background-color: darkblue;
+  color: white;
+}
+
+#totalCarrito {
+  font-weight: bold;
+  text-align: right;
+}
 
 /*--------------------------------------------------------------
 # Services

@@ -147,32 +147,32 @@
             <div class="section-title">
               <h2><strong>Consulta</strong></h2>
             </div>
-            <form action="../forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="form-row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" data-rule="minlen:4" data-msg="Escriba su nombre" />
-                  <div class="validate"></div>
+
+            <form id="contactanos">
+              <div class="form-group">
+                  <label for="Nombre">Nombre</label>
+                  <input type="text" class="form-control" id="inputNombre">
                 </div>
-                <div class="col-md-6 form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="E-mail" data-rule="email" data-msg="Inserte un e-mail valido." />
-                  <div class="validate"></div>
-                </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email</label>
+                <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-muted">Nunca compartiremos tu Email con nadie.</small>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" data-rule="minlen:4" data-msg="Escriba el asunto del mensaje" />
-                <div class="validate"></div>
+                  <label for="Nombre">Asunto</label>
+                  <input type="text" class="form-control" id="inputAsunto">
+                </div>
+                <div class="form-group">
+                  <label for="Nombre">Consulta</label>
+                  <textarea class="form-control" id="textArea" name="message" rows="5" data-rule="required" data-msg="Por favor escriba su consulta" placeholder="Hacenos tu consulta!"></textarea>
+                </div>
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Suscribirse a ofertas!</label>
               </div>
-              <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Por favor escriba su consulta" placeholder="Hacenos tu consulta!"></textarea>
-                <div class="validate"></div>
-              </div>
-              <div class="mb-3">
-                <div class="loading">Cargando...</div>
-                <div class="error-message">Error al enviar el mensaje.</div>
-                <div class="sent-message">Su mensaje ha sido enviado. Muchas gracias!</div>
-              </div>
-              <div class="text-center"><button type="submit">Enviar</button></div>
+              <button type="submit" class="btn btn-primary">Enviar</button>
             </form>
+
           </div>
 
         </div>
@@ -242,6 +242,7 @@
   <script src="../assets/vendor/aos/aos.js"></script>
 
   <!-- Template Main JS File -->
+  <script src="../assets/js/contactanos.js"></script>
   <script src="../assets/js/main.js"></script>
 
 </body>
